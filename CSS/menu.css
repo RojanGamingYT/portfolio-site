@@ -1,0 +1,42 @@
+#mySidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  
+  #aboutmenu {
+    top: 3vh;
+    background-color: #4CAF50;
+  }
+  
+  #blogmenu {
+    top: 17vh;
+    background-color: #2196F3;
+  }
+  
+  #Projectsmenu {
+    top: 32vh;
+    background-color: #f44336;
+  }
+  
+  #Academicsmenu {
+    top: 47vh;
+    background-color: #ffff66;
+  }
+
+  #WorkExpmenu {
+    top: 62vh;
+    background-color: #555;
+    padding: 0px !important;
+    padding-left: 15px !important;
+  }
