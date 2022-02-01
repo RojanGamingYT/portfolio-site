@@ -2,4 +2,15 @@
   from = "/arc-sw.js"
   to = "https://arc.io/arc-sw.js"
   status = 200
+
+[[redirects]]
+  from = "/youtube"
+  to = "https://youtube.com/RojanGamingYT"
+  status = 200
+
+[[redirects]]
+  from = "/more"
+  to = "https://bio.link/RojanGaming"
+  status = 200
+
   
