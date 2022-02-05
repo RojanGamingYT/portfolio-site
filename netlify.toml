@@ -3,9 +3,6 @@
   to = "https://arc.io/arc-sw.js"
   status = 200
 
-[[plugins]]
-package = "netlify-plugin-image-optim"
-
 [[redirects]]
   from = "/youtube"
   to = "https://youtube.com/RojanGamingYT"
