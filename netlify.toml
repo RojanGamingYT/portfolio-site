@@ -1,24 +1,3 @@
-[build]
-  publish = "public"
-
-[[plugins]]
-  package = "netlify-plugin-submit-sitemap"
-
-	[plugins.inputs]
-
-	# The base url of your site (optional, default = main URL set in Netlify)
-	baseUrl = "https://rojansapkota.com.com.np"
-
-	# Path to the sitemap URL (optional, default = /sitemap.xml)
-	sitemapPath = "/sitemap.xml"
-
-	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
-	providers = [
-		"google",
-		"bing",
-		"yandex"
-	]
-
 [[redirects]]
   from = "/arc-sw.js"
   to = "https://arc.io/arc-sw.js"
