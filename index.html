@@ -427,6 +427,18 @@ the guilt of praising the great sorrows.
             </div>
           </div>
 
+             <script>
+             function dig() {
+                 //navigator.clipboard.writeText('K7FQB67W9');
+                 document.querySelector("#dig").type = 'text';
+                 var copyText = document.querySelector("#dig");
+                 copyText.select();
+                 document.execCommand("copy");
+                 document.querySelector("#dig").type = 'hidden';
+                 alert('Copied Certificate Number to Clipboard :)')
+             }
+             </script>
+
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
