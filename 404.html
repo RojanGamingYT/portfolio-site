@@ -1,24 +1,133 @@
+<!DOCTYPE html>
 <html>
-<div align="center">
-<h5>404 , Page not Found</h5>
-<head>
-<title>NOT FOUND</title>
-<link rel="icon" type="image/x-icon" href="assets/img/profile-img.jpg">
-  <meta http-equiv="refresh" content="5; URL=https://rojansapkota.com.np" />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NP9XL5F');</script>
-<!-- End Google Tag Manager -->
-</head>
-<body>
-  <p>If you are not redirected in five seconds, <a href="https://rojansapkota.com.np">click here</a>.</p>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP9XL5F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-</body>
-</div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <script async src="https://arc.io/widget.min.js#oFrxivBp"></script>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>404 - Not Found</title>
+
+		<link rel="icon" />
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				overflow: hidden;
+				user-select: none;
+				font-family: arial;
+				text-align: center;
+			}
+
+			body {
+				background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.85)),
+					linear-gradient(transparent 75%, #000 75%),
+					linear-gradient(
+						to left,
+						#d1d1d1 14.29%,
+						#ffe500 14.29%,
+						#ffe500 28.57%,
+						#0ef 28.57%,
+						#0ef 42.86%,
+						#02d406 42.86%,
+						#02d406 57.14%,
+						#b6077c 57.14%,
+						#b6077c 71.43%,
+						#ff002f 71.43%,
+						#ff002f 85.71%,
+						#0000c2 85.71%
+					);
+			}
+
+			body:before {
+				height: 5%;
+				width: 100%;
+				bottom: 25%;
+				content: '';
+				display: block;
+				position: absolute;
+				background-image: linear-gradient(
+					to left,
+					#0000c2 14.29%,
+					#000 14.29%,
+					#000 28.57%,
+					#85055a 28.57%,
+					#85055a 42.86%,
+					#000 42.86%,
+					#000 57.14%,
+					#0ef 57.14%,
+					#0ef 71.43%,
+					#000 71.43%,
+					#000 85.71%,
+					#d1d1d1 85.71%
+				);
+			}
+
+			.static {
+				top: 0;
+				left: 0;
+				width: 100%;
+				opacity: 0.65;
+				animation: static 3s steps(5, end) infinite;
+				background-image: url('https://i.imgur.com/vISjwOZ.png');
+			}
+
+			@keyframes static {
+				0% {
+					background-position: 0 0;
+				}
+				20% {
+					background-position: 25% 15%;
+				}
+				40% {
+					background-position: 50% 69%;
+				}
+				60% {
+					background-position: 33% 25%;
+				}
+				80% {
+					background-position: 72% 4%;
+				}
+				to {
+					background-position: 80% 91%;
+				}
+			}
+		</style>
+
+		<script>
+			(function iconScroll(image) {
+				const link = document.querySelector("link[rel='icon']");
+				link.href = image;
+				document.getElementsByTagName('head')[0].appendChild(link);
+				setTimeout(function () {
+					const image1 =
+						'https://hotemoji.com/images/dl/n/keycap-4-emoji-by-twitter.png';
+					const image2 =
+						'https://hotemoji.com/images/dl/l/keycap-digit-zero-emoji-by-twitter.png';
+					if (image === image1) {
+						iconScroll(image2);
+					} else if (image === image2) {
+						iconScroll(image1);
+					} else {
+						iconScroll(image1);
+					}
+				}, 1000);
+			})('https://cdn.discordapp.com/avatars/882905395423739934/7642a554f45b601f3f871814ca5d5f7e.png');
+
+			(function titleScroll(text) {
+				document.title = text;
+				setTimeout(function () {
+					titleScroll(text.substr(1) + text.substr(0, 1));
+				}, 250);
+			})('404 - Not Found - ');
+		</script>
+	</head>
+
+	<body>
+		<div class="static">
+			<h1 style="color: white; font-size: 200px; line-height: 300%;">404</h1>
+		</div>
+	</body>
 </html>
