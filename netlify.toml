@@ -18,6 +18,10 @@
   to = "https://drive.google.com/drive/folders/1-DCyR6VUUtJySvAI4ppcdIe9D7BDqvB1"
   status = 200
 
+[[redirects]]
+  from = "/spoofer"
+  to = "https://rojangamingyt.github.io/mail-spoofer/"
+  status = 200
 
 
   
