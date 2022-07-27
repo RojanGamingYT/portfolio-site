@@ -28,5 +28,10 @@
   to = "https://ss.rojansapkota.com.np/"
   status = 302
 
+[[redirects]]
+  from = "/SEE"
+  to = "https://see.ntc.net.np/"
+  status = 200
+
 
   
