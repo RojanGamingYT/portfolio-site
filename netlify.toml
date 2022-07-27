@@ -19,8 +19,13 @@
   status = 200
 
 [[redirects]]
-  from = "/spoofer"
-  to = "https://mail-spoof.rojansapkota.com.np/"
+  from = "/qrgen"
+  to = "https://qr.rojansapkota.com.np/"
+  status = 200
+
+[[redirects]]
+  from = "/ssgen"
+  to = "https://ss.rojansapkota.com.np/"
   status = 200
 
 
