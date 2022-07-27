@@ -29,7 +29,7 @@
   status = 302
 
 [[redirects]]
-  from = "/SEE"
+  from = "/see"
   to = "https://see.ntc.net.np/"
   status = 200
 
