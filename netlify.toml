@@ -21,12 +21,12 @@
 [[redirects]]
   from = "/qrgen"
   to = "https://qr.rojansapkota.com.np/"
-  status = 301
+  status = 302
 
 [[redirects]]
   from = "/ssgen"
   to = "https://ss.rojansapkota.com.np/"
-  status = 301
+  status = 302
 
 
   
