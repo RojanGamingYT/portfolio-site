@@ -18,15 +18,4 @@
   to = "https://drive.google.com/drive/folders/1-DCyR6VUUtJySvAI4ppcdIe9D7BDqvB1"
   status = 200
 
-[[redirects]]
-  from = "/qrgen"
-  to = "https://qr.rojansapkota.com.np"
-  status = 301
-
-[[redirects]]
-  from = "/ssgen"
-  to = "https://ss.rojansapkota.com.np"
-  status = 301
-
-
   
