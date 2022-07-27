@@ -31,7 +31,7 @@
 [[redirects]]
   from = "/see"
   to = "https://see.ntc.net.np/"
-  status = 200
+  status = 301
 
 
   
