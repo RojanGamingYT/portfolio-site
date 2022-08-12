@@ -18,4 +18,9 @@
   to = "https://drive.google.com/drive/folders/1-DCyR6VUUtJySvAI4ppcdIe9D7BDqvB1"
   status = 200
 
+[[redirects]]
+  from = "/aiimggen"
+  to = "https://discord.gg/MVG9mv4qzw"
+  status = 301
+
   
