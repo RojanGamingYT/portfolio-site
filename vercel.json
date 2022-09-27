@@ -1,4 +1,8 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/me", "destination": "/profile.html" },
+    { "source": "/user", "destination": "/api/user", "permanent": false },
+    { "source": "/view-source", "destination": "https://github.com/vercel/vercel" }]
 }
