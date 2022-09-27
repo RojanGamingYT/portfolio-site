@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^/oldfile_path/file_name\.html$ /oldfile_path/certificates.html [R=301,L]
+RewriteRule ^/oldfile_path/file_name\.html$ /oldfile_path/file_name.html [R=301,L]
