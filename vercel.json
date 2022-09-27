@@ -2,6 +2,6 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/me", "destination": "/profile.html" }
+    { "source": "/more", "destination": "https://bio.link/rojangaming" }
   ]
 }
