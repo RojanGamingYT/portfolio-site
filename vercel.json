@@ -4,8 +4,17 @@
       "source": "/certificates",
       "destination": "https://drive.google.com/drive/folders/1-DCyR6VUUtJySvAI4ppcdIe9D7BDqvB1", 
       "permanent": true
-    }],
+    },
+    { 
+      "source": "/more",
+      "destination": "https://bio.link/rojangaming", 
+      "permanent": true
+    },
+],
 {
   "cleanUrls": true
+},
+{
+  "trailingSlash": false
 }
 }
