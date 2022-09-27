@@ -10,11 +10,10 @@
       "destination": "https://bio.link/rojangaming", 
       "permanent": true
     },
-],
+]},
 {
   "cleanUrls": true
 },
 {
   "trailingSlash": false
-}
 }
