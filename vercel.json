@@ -1,5 +1,8 @@
 {
   "redirects": [
     { "source": "/test", "destination": "https://github.com/vercel/vercel" }
-  ]
+  ],
+  {
+  "cleanUrls": true
+}
 }
