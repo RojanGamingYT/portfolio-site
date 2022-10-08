@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<meta charset="application/javascript">
 <title>Redirecting...</title>
 <script>
     setTimeout(function(){
