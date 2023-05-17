@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Rojan Sapkota - IMDb</title>
+<script>
+    setTimeout(function(){
+        window.location.href = "https://www.imdb.com/name/nm14859710/";
+    }, 0);                
+</script>
+<link rel="canonical" href="https://www.imdb.com/name/nm14859710/">
+</html>
