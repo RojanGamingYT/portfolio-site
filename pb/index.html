@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>txt</title>
+    <meta name="description" content="URL selfhosting content">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/txt/style.css">
+    <script src="/txt/lzstring.js" type="text/javascript"></script>
+    <script src="/txt/crypt.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      const getUrl = (url) => {
+        const link = document.createElement("a")
+        link.href = url
+        const path = [
+          link.protocol,
+          '//',
+          link.host,
+          link.pathname,
+          link.search,
+          link.hash,
+        ].join('')
+
+        document.getElementById('link').textContent = path
+        document.getElementById('link').href = path
+      }
+
+      const encrypt = () => {
+        const newKey = document.getElementById('newkey').value
+
+        if (newKey.length == 0) {
+          alert('no password set')
+          return
+        }
+
+        const content = document.getElementById('page').value
+        const s = mjsCrypt.encryptUint8Array(
+          LZString.compressToUint8Array(content), newKey)
+        const url = 'view.html'+'#'+s+"#" + ''
+        getUrl(url)
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This site requires JavaScript.</noscript>
+    <h1 id="h">Encrypted Text Bin</h1>
+
+    <p>
+      The contents of you page is compressed using LZString.js and
+      encrypted using mjsCrypt.js, and stored in the hash of the .
+      The encryption is unproven, and may only act as a deterent.
+      If you need truly safe encryption, use PGP.
+    </p>
+
+    <textarea id="page" placeholder="Write here"></textarea>
+
+    <p>
+      Password (the longer the better):
+      <input id="newkey" type="password"></input>
+    </p>
+
+    <p>Build the page:
+      <input onclick="encrypt()" type="button" text="Ok" value="OK"></input>
+    </p>
+
+    <p>
+      Here's your url: <a id="link"></a>
+    </p>
+  </body>
+</html>

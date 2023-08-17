@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>txt</title>
+    <link rel="stylesheet" type="text/css" href="/txt/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/txt/lzstring.js" type="text/javascript"></script>
+    <script src="/txt/crypt.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      // safety
+      document.cookie.split(';')
+        .forEach((c) => {
+          document.cookie = c
+            .replace(/^ +/, '')
+            .replace(/=.*/, `=;expires=${new Date().toUTCString()};path=/`)
+        })
+        try {
+          window.localStorage.clear()
+          window.sessionStorage.clear()
+        } catch {
+          // most likely in private mode
+        }
+
+      d = window.location.hash.slice(1)
+      const splithash = d.split('#')
+
+      const decrypt = () => {
+        const key = document.getElementById('k').value
+        try {
+          const decryptedContent = LZString
+            .decompressFromUint8Array(
+              mjsCrypt.decryptUint8Array(splithash[0], key))
+
+          document.body.innerText = decryptedContent
+
+          if (!decryptedContent) {
+            document.body.innerText = 'Failed'
+          }
+        } catch {
+          document.body.innerText = 'Failed'
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This site requires JavaScript.</noscript>
+    Password:
+    <input id="k" type="password" onkeydown="if (event.keyCode == 13) decrypt()"></input>
+    <input onclick="decrypt()" type="button" text="Ok" value="OK"></input>
+    <br><br>
+    <nav>
+      <small>
+        <a href="/">Write Something</a>
+      </small>
+    </nav>
+  </body>
+</html>
