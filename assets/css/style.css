@@ -84,7 +84,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align-last: center;
   font-family: "Poppins", sans-serif;
 }
-
+.rounded-circle {
+  border-radius: 30% !important;
+}
 #header .profile h1 a, #header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
@@ -98,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
-  border-radius: 40%;
+  border-radius: 50%;
   text-align: center;
   width: 36px;
   height: 36px;
